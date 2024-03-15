@@ -1,0 +1,74 @@
+:root{
+    --index: calc(1vw + 1vh);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body, html{
+    background-color: black;
+}
+.wrapper{
+    padding: 250px 30px;
+}
+
+img{
+    width: calc(var(--index) * 20);
+}
+b{
+    font-weight: 900;
+}
+
+h1, h2, p{
+    color: white;
+    font-weight: 300;
+
+}
+
+h1{
+    font-size: calc(var(--index) * 2.5);
+}
+h2{
+    font-size: calc(var(--index) * 1.3);
+}
+p{
+    font-size: calc(var(--index) * 0.8);
+}
+.line{
+    width: 100%;
+    height: 1px;
+
+}
+.caseBlock{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 500px;
+}
+.caseBlock__caseImage{
+    align-items: end;
+}
+.slice{
+    display: block;
+    overflow: hidden;
+}
+.animatedChar{
+    display: inline-block;
+    transform: translateY(100px);
+    animation: slideIn 0.5s ease forwards;
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(100px);
+    }
+    to {
+        transform: translateY(0px);
+    }
+}
+
+.animationItem {
+    visibility: hidden;
+    opacity: 0;
+}

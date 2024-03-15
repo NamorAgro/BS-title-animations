@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="wrapper">
+       
+<!-- 
+    Для каждого элемента заголовка который надо анимировать, добавить 
+    - class animationItem
+    и для каждого прописать 
+    - отдельный id, 
+    который будет в объекте schemeOfSlice js файла анимации
+-->
+
+<!-- 
+    Также в CSS
+    добавляем свойства изначальные hidden и opacity 0 
+    для .animationItem
+-->
+
+        <h1 id="main" class="animationItem">
+            <strong>Branding, graphic design and UI/UX </strong> for those who’s getting ready to skyrocket
+        </h1>
+        <div class="line">
+
+        </div>
+        <article class="caseBlock">
+            <div class="caseBlock__caseImage">
+                <img src="c6.jpg" srcset="c6_1222.jpg 450w, c6.jpg 1000w" sizes="(max-width: 600px) 450px, 1000px" alt="">
+            </div>
+            <div class="case__text">
+                <p>Euroled</p>
+                <h2 id="euroled" class="animationItem"  >LED lighting equipment shop got the rebranding and online store redesign
+                </h2>
+            </div>
+        </article>
+        <article class="caseBlock">
+            <div class="caseBlock__caseImage">
+                <img src="it_13-optimized.jpg"  alt="">
+            </div>
+            <div class="case__text">
+                <p>Aver</p>
+                <h2 id="aver" class="animationItem" >The second version of the site for one of the largest real estate agencies in Latvia
+                    
+                </h2>
+            </div>
+        </article>
+        
+    </div>
+    <script src="jalousie_animation.js"></script>
+</body>
+</html>
